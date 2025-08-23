@@ -1,0 +1,109 @@
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #f2f2f2;
+}
+h1{
+  font-size: 4rem;
+}
+button{
+  padding: 10px 20px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-button{
+  background-color: hsl(120, 100%, 40%);
+}
+.add-button:hover{
+  background-color: hsl(120, 100%, 30%);
+}
+.delete-button{
+  background-color: hsl(0, 100%, 40%);
+}
+.delete-button:hover{
+  background-color: hsl(0, 100%, 30%);
+}
+.move-button{
+  background-color: hsl(240, 100%, 40%);
+}
+.move-button:hover{
+  background-color: hsl(240, 100%, 30%);
+}
+input[type="text"]{
+  padding: 10px;
+  font-size: 1.7rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+
+  font-weight: bold;
+  padding: 10px;
+  background-color: hsl(0, 0%, 98%);
+  margin-bottom: 10px;
+  border: 2px solid #b4afaf;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+  text-align: left;
+}
+.delete-button, .move-button{
+  padding: 5px 10px;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+/* media query ......... */
+/* Media Query for 375 x 800 screen */
+@media screen and (max-width: 345px) and (max-height: 800px) {
+  .to-do-list {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+  }
+
+  li {
+    font-size: 1.4rem;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delete-button, .move-button {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
