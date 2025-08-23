@@ -1,7 +1,11 @@
+body{
+  background: #611c52;
+  background: linear-gradient(90deg,rgba(97, 28, 82, 0.83) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
 .to-do-list{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: 100px;
+  margin: 5px;
   background-color: #f2f2f2;
 }
 h1{
@@ -42,7 +46,7 @@ input[type="text"]{
   margin-right: 10px;
 }
 ol{
-  padding: 0;
+  padding: 10px;
 }
 li{
   font-size: 2rem;
@@ -65,7 +69,12 @@ li{
   font-size: 2rem;
   margin-left: 10px;
 }
-
+.no-task{
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 50%);
+  padding: 20px;
+}
 
 
 
@@ -106,4 +115,38 @@ li{
     margin-top: 5px;
     margin-left: 0;
   }
+}
+
+
+
+
+/* navbar css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2563eb; /* blue */
+  padding: 10px 45px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;  
 }

@@ -20,24 +20,16 @@ const TodoList = () => {
         setTask(updatedTasks);
     }
     function moveUp(index) {
-  // purana task text nikal lo
-  const currentTask = task[index];
+        const currentTask = task[index];
 
-  // user se new text lo
-  const newTask = prompt("Edit your task:", currentTask);
+        const newTask = prompt("Edit your task:", currentTask);
 
-  // agar user ne kuch enter kiya hai to update karo
-  if (newTask !== null && newTask.trim() !== "") {
-    const updatedTasks = [...task];
-    updatedTasks[index] = newTask;
-    setTask(updatedTasks);
-  }
-}
-
-
-    function moveDown(index) {
-
+    if (newTask !== null && newTask.trim() !== "") {
+        const updatedTasks = [...task];
+        updatedTasks[index] = newTask;
+        setTask(updatedTasks);
     }
+   }
 
 
   return (
@@ -48,6 +40,11 @@ const TodoList = () => {
                 <input type="text" placeholder='Enter a task....' value={newtask}  onChange={handleChange} />
                 <button className='add-button' onClick={addTask}>Add</button>
             </div>
+             {task.length === 0 ? (
+                <p className='no-task'>
+                    Todo item is not found please add a task.
+                </p>
+                ) : (
             <ol>
                 {task.map((iteam, index) => (
                     <li key={index}>
@@ -57,7 +54,7 @@ const TodoList = () => {
                     </li>
                 ))}
             </ol>
-
+            )}
         </div>
     </>
   )
