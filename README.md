@@ -63,6 +63,8 @@ To-Do-List/
 │   ├── App.jsx
 │   └── main.jsx
 ├── index.html
+├── .gitingore
+├── packege-local.json
 ├── package.json
 ├── vite.config.js
 └── README.md
